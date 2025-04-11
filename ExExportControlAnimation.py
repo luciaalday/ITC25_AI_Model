@@ -18,7 +18,8 @@ try:
 	# requestParams['animationNames'] = ['myAnim', 'myOtherAnim'] 		# optional array of strings, if you want to only include the given animations by name in the exported code
 																		# names will be ignored if indexes are also sent.
 																		# returns an error if you try and select invalid animations
-																		# All animations will be included if not sent
+																		# All animations will be included if not sent 
+	requestParams['animationNames'] = ['When I\'m Put Together']
 
 
 	# starting animation for setup strings
