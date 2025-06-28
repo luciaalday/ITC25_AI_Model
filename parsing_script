@@ -1,0 +1,17 @@
+
+COMMANDS = {
+    "hi": "sayHi",
+    "fly": "canYouFly",
+    "speak": "speakOrCaw",
+    "rest": None
+}
+
+def parse_transcript(transcript: str):
+
+    transcript = transcript.lower()
+    
+    for keyword, api_id in COMMANDS.items():
+        if keyword in transcript:
+            return keyword
+    return "None Found"
+    
