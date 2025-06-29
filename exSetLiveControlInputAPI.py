@@ -29,9 +29,6 @@ try:
 														# Movement parts (Joint, Motor, pose blend axis, etc) expect a value between 0.0 and 1.0
 														# On Off events treat any non 0.0 value less than or equal to 1.0 as on, and 0.0 as off
 														# Trigger events treat any non 0.0 value less than or equal to 1.0 as a new trigger
-	
-
-
 
 	response = requests.put(requestUrl, json=requestParams)
 	response.raise_for_status()

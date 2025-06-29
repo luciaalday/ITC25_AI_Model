@@ -44,4 +44,5 @@ try:
 	print(responseData)
 
 except requests.exceptions.RequestException as e:
+	print("Failed.")
 	raise SystemExit(e)
