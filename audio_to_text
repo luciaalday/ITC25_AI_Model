@@ -6,4 +6,7 @@ def transcribe_audio(file_path):
 
     result = model.transcribe(file_path)
 
-    return result["text"]
+    return {
+        "identifier": "transcriptionResult",
+        "value": result["text"]
+    }
